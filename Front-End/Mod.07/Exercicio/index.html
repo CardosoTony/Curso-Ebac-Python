@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+   <meta charset="UTF-8">
+   <meta name="viewport" content="width=device-width, initial-scale=1.0">
+   <title>HTML com JS</title>
+   <link rel="stylesheet" href="./main.css" />
+</head>
+
+<body>
+   <div class="container">
+      <div class="form-container">
+         <h1>EBAC</h1>
+         <h2>Validação de Form</h2>
+         <form id="valid-number">
+            <div class="input-container-a">
+               <span>Campo A</span>
+               <input type="number" id="first-number" placeholder="Insira um número" required>
+            </div>
+            <div class="input-container-b">
+               <span>Campo B</span>
+               <div class="error-message">
+                  <p>B precisa ser maior que A</p>
+               </div>
+               <input type="number" id="second-number" placeholder="Insira um número" required>
+            </div>
+            <button id="btn-validate" type="submit">Validar</button>
+         </form>
+      </div>
+      <span class="success-message">Validado com sucesso!</span>
+   </div>
+   <script src="./main.js"></script>
+</body>
+
+</html>

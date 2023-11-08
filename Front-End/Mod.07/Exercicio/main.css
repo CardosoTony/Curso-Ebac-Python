@@ -1,0 +1,142 @@
+@import url('https://fonts.cdnfonts.com/css/jetbrains-mono-2');
+@import url('https://fonts.cdnfonts.com/css/darbots-2');
+
+* {
+   margin: 0;
+   padding: 0;
+   box-sizing: border-box;
+   font-family: 'JetBrains Mono', sans-serif;
+   font-weight: bold;
+}
+
+.container {
+   margin: 0 auto;
+   display: flex;
+   flex-wrap: wrap;
+   max-width: 300px;
+   margin: 35vh auto;
+   justify-content: center;
+   align-items: center;
+}
+
+.form-container {
+   display: flex;
+   flex-wrap: wrap;
+   align-items: center;
+   justify-content: center;
+   background-color: rgba(0, 55, 100, 0.664);
+   border: 1px solid #000000;
+   border-radius: 20px;
+}
+
+h1 {
+   margin: 5px 0;
+   font-family: 'Darbots', sans-serif;
+}
+
+h2 {
+   margin-bottom: 5px;
+}
+
+form {
+   width: 90%;
+}
+
+form,
+.input-container-a,
+.input-container-b {
+   margin-bottom: 15px;
+}
+
+.input-container-a {
+   display: flex;
+   flex-wrap: wrap;
+   align-items: center;
+   justify-content: center;
+}
+
+
+.input-container-a span,
+input {
+   width: 100%;
+}
+
+.input-container-b {
+   display: flex;
+   flex-wrap: wrap;
+   justify-content: space-between;
+   align-items: end;
+}
+
+.error-message {
+   color: #9e0202;
+   display: none;
+}
+
+p {
+   font-size: .78rem;
+}
+
+input {
+   padding: 3px 0;
+   background-color: #d4d4d4;
+   border-radius: 5px;
+   border: 1px solid #000000;
+}
+
+input.error {
+   outline-color: #9e0202;
+   border: 1px solid #9e0202;
+   box-shadow: inset 0 0 1px 1px #9e0202;
+}
+
+#first-number,
+#second-number {
+   font-size: 14px;
+   padding-left: 5px;
+   font-style: italic;
+}
+
+button {
+   display: flex;
+   justify-content: center;
+   align-items: center;
+   margin: 0 auto;
+   width: 30%;
+   height: 25px;
+   border-radius: 4px;
+   color: #d4d4d4;
+   font-size: 14px;
+   background-color: #2e2e2e;
+   outline: none;
+   border: 1px solid #000000;
+   box-shadow: 0 0 2px 2px #181818;
+   cursor: pointer;
+}
+
+button:hover {
+   background-color: #494949;
+}
+
+button:active {
+   box-shadow: inset 0 0 2px 2px #181818;
+   font-size: 13px;
+}
+
+.success-message {
+   display: flex;
+   justify-content: center;
+   align-items: center;
+   margin-top: 5px;
+   background-color: #00d100;
+   width: 80%;
+   height: 25px;
+   border-radius: 5px;
+   border: 1px solid #000000;
+   /* display: none; */
+   visibility: hidden;
+}
+
+.success-message.visible {
+   visibility: visible;
+}
