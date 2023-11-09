@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+   <meta charset="UTF-8">
+   <meta name="viewport" content="width=device-width, initial-scale=1.0">
+   <title>Agenda de contatos</title>
+   <link rel="preconnect" href="https://fonts.googleapis.com">
+   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+   <link href="https://fonts.googleapis.com/css2?family=JetBrains+Mono&display=swap" rel="stylesheet">
+   <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+   <div class="container">
+
+      <header>
+         <h1>Agenda de contatos</h1>
+      </header>
+
+      <form id="form-contact">
+         <div class="form-container">
+            <input type="text" id="name" placeholder="Nome Sobrenome" required>
+            <p id="message-name"></p>
+            <p>Nome</p>
+         </div>
+         <div class="form-container">
+            <input type="tel" id="tel" placeholder="00123456789" pattern="([0-9]{10})|([0-9]{11})" required>
+            <p id="message-phone"></p>
+            <p>Telefone</p>
+         </div>
+         <div class="form-container">
+            <input type="email" id="email" placeholder="example@email.com">
+            <p>E-mail (Opcional)</p>
+         </div>
+         <button type="submit">Add +</button>
+      </form>
+
+      <table cellspacing="0">
+         <thead>
+            <tr>
+               <th class="th-width">Nome</th>
+               <th>Telefone</th>
+               <th class="th-width">E-mail</th>
+            </tr>
+         </thead>
+         <tbody></tbody>
+      </table>
+
+   </div>
+   <script src="main.js"></script>
+</body>
+
+</html>
