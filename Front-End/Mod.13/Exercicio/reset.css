@@ -1,0 +1,26 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: 'Alegreya Sans', sans-serif;
+}
+
+@font-face {
+  font-family: 'Old Fenris';
+  src:
+    url('./assets/Fonts/Old\ Fenris.woff2') format('woff2'),
+    url('./assets/Fonts/Old\ Fenris.ttf') format('truetype');
+}
+
+@font-face {
+  font-family: 'Exocet Heavy';
+  src:
+    url('./assets/Fonts/Exocet\ Heavy.woff2') format('woff2'),
+    url('./assets/Fonts/Exocet\ Heavy.ttf') format('truetype');
+}
+
+@font-face {
+  font-family: 'Alegreya Sans';
+  src:
+    url('./assets/Fonts/AlegreyaSans-Medium.ttf') format('truetype'),
+}

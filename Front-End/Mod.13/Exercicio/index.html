@@ -1,0 +1,201 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Módulo 13 - Bootstrap</title>
+  <link rel="shortcut icon" href="./assets/Images/diablo-4-official-icon.png" type="image/x-icon">
+  <link rel="stylesheet" href="./lib/bootstrap.min.css">
+  <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+  <header id="header">
+    <div class="navbar navbar-expand-lg justify-content-center">
+      <div class="container row">
+        <picture class="col-md-4 picture">
+          <source srcset="./assets/Images/d4-logo-002.avif" type="image/avif">
+          <source srcset="./assets/Images/d4-logo-002.png" type="image/png">
+          <img class="md-4" src="./assets/Images/d4-logo-002.avif" alt="logo">
+        </picture>
+        <button type="button" class="navbar-toggler" data-bs-toggle="collapse" data-bs-target="#menu">
+          <span class="navbar-toggler-icon"></span>
+        </button>
+        <nav class="collapse navbar-collapse justify-content-end col-md-4" id="menu">
+          <ul class="nav nav-pills navbar-nav">
+            <li class="nav-item">
+              <a class="nav-link active" href="#inicio">Início</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="#classes">Classes</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="#world">Mundo</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="#reference">Referência</a>
+            </li>
+          </ul>
+        </nav>
+      </div>
+    </div>
+  </header>
+
+  <div class="d-flex flex-column container-body" data-bs-spy="scroll" data-bs-target="#header"
+    data-bs-smooth-scroll="true">
+    <section id="inicio">
+      <div class="container video-container d-flex flex-column">
+        <video class="video-bg d-block w-100" autoplay muted loop>
+          <source src="./assets/Media/D4-Launch_Masthead-Desktop_001.mp4" type="video/mp4">
+        </video>
+        <img class="d-block w-100" src="./assets/Images/D4_Story-Launch-Trailer_Thumb_global.png" alt="Lilith">
+      </div>
+    </section>
+
+    <section id="classes">
+      <div id="carousel-exemplo" class="container carousel slide carousel-bg-color w-100" data-bs-ride="carousel">
+        <div class="carousel-inner">
+
+          <div data-bs-interval="3000" class="carousel-item active">
+            <img class="d-block w-100" src="./assets/Images/D4-Launch_Class-Section-Necromancer_001.webp"
+              alt="Necromancer-Character">
+            <div class="carousel-caption">
+              <h2>Necromancer</h2>
+              <span class="class-details-std">
+                Necromancers are cunning summoners that conjure vengeful hordes of the undead. Their Essence flows into
+                three powerful bastions of Bone, Blood, or Shadow to bring low their enemies.
+              </span>
+              <span class="class-details-mob">
+                Necromancers are cunning summoners that conjure vengeful hordes of the undead...
+              </span>
+            </div>
+          </div>
+
+          <div data-bs-interval="3000" class="carousel-item">
+            <img class="d-block w-100" src="./assets/Images/D4-Launch_Class-Section-Druid_001.webp">
+            <div class="carousel-caption">
+              <h2>Druid</h2>
+              <span class="class-details-std">
+                The Druid is a savage shapeshifter, fluidly transforming between the forms of a towering bear or a
+                vicious werewolf to
+                fight alongside the creatures of the wild. He also commands the power of earth, wind, and storm,
+                unleashing nature's
+                wrath to devastating effect.
+              </span>
+              <span class="class-details-mob">
+                The Druid is a savage shapeshifter, fluidly transforming between the forms of a towering bear or...
+              </span>
+            </div>
+          </div>
+
+          <div data-bs-interval="3000" class="carousel-item">
+            <img class="d-block w-100" src="./assets/Images/D4-Launch_Class-Section-Barbarian_001.webp">
+            <div class="carousel-caption">
+              <h2>Barbarian</h2>
+              <span class="class-details-std">
+                The Barbarian has unparalleled strength and expertly wields an entire arsenal in battle, with a weapon
+                for every
+                occasion. He bellows intimidating war cries and unleashes ground-shaking slams to send approaching
+                hordes reeling.
+              </span>
+              <span class="class-details-mob">
+                The Barbarian has unparalleled strength and expertly wields an entire arsenal in battle...
+              </span>
+            </div>
+          </div>
+
+        </div>
+        <button data-bs-target="#carousel-exemplo" data-bs-slide="prev" class="carousel-control-prev prev-btn"
+          type="button">
+          <span class="carousel-control-prev-icon"></span>
+        </button>
+        <button data-bs-target="#carousel-exemplo" data-bs-slide="next" class="carousel-control-next next-btn"
+          type="button">
+          <span class="carousel-control-next-icon"></span>
+        </button>
+        <div class="carousel-indicators">
+          <button data-bs-target="#carousel-exemplo" data-bs-slide-to="0" class="active" type="button"></button>
+          <button data-bs-target="#carousel-exemplo" data-bs-slide-to="1" type="button"></button>
+          <button data-bs-target="#carousel-exemplo" data-bs-slide-to="2" type="button"></button>
+        </div>
+      </div>
+    </section>
+
+    <section id="world">
+      <div class="container">
+        <h2 class="text-center d-flex flex-column">Open World
+          <span>Discover the world of Sanctuary as you continue
+            the
+            battle against the
+            Burning
+            Hells. Join other
+            adventurers, fight
+            demonic forces, and uncover lost secrets.</span>
+        </h2>
+        <div class="row">
+          <div class="col-lg-4 col-md-6">
+            <div class="card text-bg-dark">
+              <img src="./assets/Images/D4-Launch_Media-Thumbs_World-Bosses_1600.webp">
+            </div>
+            <div class="card-body">
+              <h4 class="card-title text-center">World Bosses</h4>
+              <p class="card-text text-center">World Bosses are encountered in open-world areas and consist of
+                multi-stage
+                battles. Players have to work together to
+                defeat them (up to 12 players can engage in the battle at a time) and will be rewarded with unique
+                items should they
+                prevail.</p>
+            </div>
+          </div>
+
+          <div class="col-lg-4 col-md-6 container-2">
+            <div class="card text-bg-dark">
+              <img src="./assets/Images/D4-Launch_Media-Thumbs_Dungeons_1600.webp">
+            </div>
+            <div class="card-body">
+              <h4 class="card-title text-center">Dungeons</h4>
+              <p class="card-text text-center">As you progress through the story,
+                explore over 120 dungeons overrun with monsters. Strike the monsters down and earn valuable experience
+                and loot as a
+                reward.</p>
+            </div>
+          </div>
+
+          <div class="col-lg-4 col-md-6 container-3">
+            <div class="card text-bg-dark">
+              <img src="./assets/Images/D4-Launch_Media-Thumbs_PvP_1600.webp">
+            </div>
+            <div class="card-body">
+              <h4 class="card-title text-center">PVP</h4>
+              <p class="card-text text-center">Battles take a turn when you enter PvP zones. Mark yourself as
+                “hostile” and these high-risk,
+                high-reward areas of Sanctuary allow you to take a swing at other players for their valuable loot. But
+                be warned. This
+                also opens you up to being swung at.</p>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <section>
+      <div class="container">
+        <img src="./assets/Images/d4-lilith-bg-light.webp" class="d-block w-100">
+      </div>
+    </section>
+
+    <section id="reference">
+      <footer>
+        <span>Referência</span>
+        <a href="https://diablo4.blizzard.com/en-us/">
+          <img src="./assets/Images/d4-logo-002.png">
+        </a>
+      </footer>
+    </section>
+  </div>
+
+  <script src="./lib/bootstrap.bundle.min.js"></script>
+</body>
+
+</html>
