@@ -1,0 +1,335 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Gamer Gear PC</title>
+
+  <!-- fonts -->
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Titillium+Web:wght@300;400;700&display=swap" rel="stylesheet">
+
+  <!-- styles -->
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css">
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.1/font/bootstrap-icons.css">
+  <link rel="stylesheet" href="main.css">
+</head>
+
+<body>
+  <header class="navbar navbar-expand-lg sticky-top py-3">
+    <div class="container">
+      <h1 class="navbar-brand m-0 section-title fw-bold">Gamer Gear PC</h1>
+      <button class="navbar-toggler" data-bs-toggle="collapse" data-bs-target="#menu-navigator">
+        <span class="navbar-toggler-icon"></span>
+      </button>
+      <nav class="navbar-collapse collapse justify-content-end" id="menu-navigator">
+        <ul class="nav nav-pills d-block d-md-flex">
+          <li class="nav-item fw-bold">
+            <a class="nav-link" href="#about">
+              <i class="bi bi-house-door me-1"></i>
+              About
+            </a>
+          </li>
+          <li class="nav-item fw-bold">
+            <a class="nav-link" href="#store">
+              <i class="bi bi-tags me-1"></i>
+              Store
+            </a>
+          </li>
+          <li class="nav-item fw-bold">
+            <a class="nav-link" href="#contact">
+              <i class="bi bi-chat-right-dots me-1"></i>
+              Contact
+            </a>
+          </li>
+        </ul>
+      </nav>
+    </div>
+  </header>
+
+  <div data-bs-spy="scroll" data-bs-target="header" data-bs-smooth-scroll="true">
+    <section id="carousel-slide">
+      <div class="carousel slide" data-bs-ride="carousel" id="carousel">
+        <div class="carousel-inner">
+          <div class="carousel-item active" data-bs-interval="3000">
+            <img src="./images/bw-v4-pro.webp" class="w-100 d-block">
+          </div>
+          <div class="carousel-item" data-bs-interval="3000">
+            <img src="./images/ghub-feature-5-desktop.png" class="w-100 d-block">
+          </div>
+          <div class="carousel-item" data-bs-interval="3000">
+            <img src="./images/scene-rainbow.webp" class="w-100 d-block">
+          </div>
+        </div>
+        <button type="button" class="carousel-control-prev" data-bs-target="#carousel" data-bs-slide="prev">
+          <span class="carousel-control-prev-icon"></span>
+        </button>
+        <button type="button" class="carousel-control-next" data-bs-target="#carousel" data-bs-slide="next">
+          <span class="carousel-control-next-icon"></span>
+        </button>
+        <div class="carousel-indicators">
+          <button type="button" data-bs-target="#carousel" data-bs-slide-to="0" class="active"></button>
+          <button type="button" data-bs-target="#carousel" data-bs-slide-to="1"></button>
+          <button type="button" data-bs-target="#carousel" data-bs-slide-to="2"></button>
+        </div>
+      </div>
+    </section>
+
+    <section id="about">
+      <div class="card bg-dark">
+        <img src="./images/razer-esports-line-homepage-desktop2x-v2.webp" class="card-img w-100 d-block">
+        <div class="card-img-overlay d-flex flex-column text-center pt-5">
+          <h2 class="fw-bold card-title">About Us</h2>
+          <p class="fw-bold m-0 card-text">Lorem, ipsum dolor sit amet consectetur adipisicing elit. Similique, vitae
+            ullam mollitia ut deleniti nam corrupti!</p>
+          <p class="fw-bold m-0 card-text">Lorem, ipsum dolor sit amet consectetur adipisicing elit. Similique, vitae
+            ullam mollitia ut deleniti nam corrupti!</p>
+        </div>
+      </div>
+    </section>
+
+    <section id="store" class="pt-5 pb-5">
+      <div class="container">
+        <div class="row">
+          <h2 class="section-title text-center mb-5 fw-bold">Store</h2>
+        </div>
+        <div class="row">
+          <aside class="col-md-2">
+            <nav class="nav nav-pills flex-column nav-store">
+              <button type="button" data-bs-toggle="tab" data-bs-target="#keyboards"
+                class="fw-bold text-start nav-link active">Keyboards</button>
+              <button type="button" data-bs-toggle="tab" data-bs-target="#mouses"
+                class="fw-bold text-start nav-link">Mouses</button>
+              <button type="button" data-bs-toggle="tab" data-bs-target="#headsets"
+                class="fw-bold text-start nav-link">Headsets</button>
+            </nav>
+          </aside>
+
+          <div class="col-md-10">
+            <div class="tab-content">
+              <div class="tab-pane active" id="keyboards">
+                <div class="row">
+
+                  <div class="col-md-4">
+                    <img src="./images/keyboards/blackwidow-v3-bla.png" class="d-block w-100">
+                    <h5 class="fw-bold mt-2">Razer BlackWidow V4 Pro</h5>
+                    <p>Mechanical Gaming Keyboard with Razer Chroma™ RGB</p>
+                  </div>
+
+                  <div class="col-md-4">
+                    <img src="./images/keyboards/huntsman-v2-analo.png" class="d-block w-100">
+                    <h5 class="fw-bold mt-2">Razer Huntsman V2 Analog</h5>
+                    <p>Gaming Keyboard with Razer™ Analog Optical Switches</p>
+                  </div>
+
+                  <div class="col-md-4">
+                    <img src="./images/keyboards/us-g915-wireless-gallery-topdown.webp" class="d-block w-100">
+                    <h5 class="fw-bold mt-2">G915</h5>
+                    <p>Um avanço em design e engenharia. LIGHTSPEED sem fio de nível profissional, LIGHTSYNC RGB
+                      avançado e interruptores
+                      mecânicos de baixo perfil e alto desempenho a sua escolha. Totalmente equipado com teclas G
+                      programáveis.</p>
+                  </div>
+
+                  <div class="col-md-4">
+                    <img src="./images/keyboards/g213-gallery-1-nb.webp" class="d-block w-100">
+                    <h5 class="fw-bold mt-2">G213 Prodigy</h5>
+                    <p>Durável com desempenho de nível de jogo. Teclas Mech-Dome táteis são resistentes a água.
+                      Iluminação personalizável com
+                      LIGHTSYNC RGB. Apoio para as mãos integrado e suportes de inclinação ajustáveis Controles de mídia
+                      dedicados</p>
+                  </div>
+
+                  <div class="col-md-4">
+                    <img src="./images/keyboards/K100_RGB_01.webp" class="d-block w-100">
+                    <h5 class="fw-bold mt-2">K100 RGB — CORSAIR OPX Switch — Preto</h5>
+                    <p>O incomparável teclado gamer óptico mecânico CORSAIR K100 RGB combina um lindo design em
+                      alumínio, iluminação RGB por
+                      tecla, a poderosa tecnologia de hiperprocessamento CORSAIR AXON e os mecanismos de tecla CORSAIR
+                      OPX RGB.</p>
+                  </div>
+
+                  <div class="col-md-4">
+                    <img src="./images/keyboards/K70_RGB_MK2_LP_BR_02.webp" class="d-block w-100">
+                    <h5 class="fw-bold mt-2">K70 RGB MK.2 Low Profile RAPIDFIRE — CHERRY® MX</h5>
+                    <p>O teclado mecânico para jogos K70 RGB MK.2 Low Profile RAPIDFIRE combina o conforto das teclas de
+                      design discreto e curso baixo com o desempenho das ultrarrápidas teclas mecânicas Cherry MX e
+                      uma vibrante
+                      iluminação RGB.</p>
+                  </div>
+                </div>
+              </div>
+
+              <div class="tab-pane" id="mouses">
+                <div class="row">
+
+                  <div class="col-md-4">
+                    <img src="./images/mouses/naga-v2-pro-charging.png" class="d-block w-100">
+                    <h5 class="fw-bold mt-2">Razer Naga V2 Pro + Mouse Dock Pro Bundle</h5>
+                    <p>Razer Naga V2 Pro<br>Razer Mouse Dock Pro</p>
+                  </div>
+
+                  <div class="col-md-4">
+                    <img src="./images/mouses/basilisk-v3-pro-c.png" class="d-block w-100">
+                    <h5 class="fw-bold mt-2">Razer Basilisk V3 Pro + Mouse Dock Pro Bundle</h5>
+                    <p>Razer Basilisk V3 Pro - Black<br>Razer Mouse Dock Pro</p>
+                  </div>
+
+                  <div class="col-md-4">
+                    <img src="./images/mouses/g600-gallery-1-nb.webp" class="d-block w-100">
+                    <h5 class="fw-bold mt-2">G600</h5>
+                    <p>Com 20 botões programáveis, o G600 MMO é projetado para domínio da habilidade.</p>
+                  </div>
+
+                  <div class="col-md-4">
+                    <img src="./images/mouses/g502x-plus-gallery-2-black.webp" class="d-block w-100">
+                    <h5 class="fw-bold mt-2">G502 X Plus</h5>
+                    <p>G502 X PLUS é a última adição à lendária linhagem do G502. Reinventado com nossos primeiros
+                      interruptores híbridos
+                      LIGHTFORCE, LIGHTSPEED de nível profissional sem fio, LIGHTSYNC RGB, sensor HERO 25K, e muito
+                      mais.</p>
+                  </div>
+
+                  <div class="col-md-4">
+                    <img src="./images/mouses/SCIMITAR_ELITE_WIRELESS_01.webp" class="d-block w-100">
+                    <h5 class="fw-bold mt-2">MMO Scimitar Elite Wireless</h5>
+                    <p>O mouse gamer MMO SCIMITAR ELITE WIRELESS equipa você com 16 botões totalmente programáveis e um
+                      painel lateral de 12
+                      botões, para que você possa se movimentar sem esforço, sem fadiga e sem fios.</p>
+                  </div>
+
+                  <div class="col-md-4">
+                    <img src="./images/mouses/IRONCLAW_RGB_WIRELESS_01.webp" class="d-block w-100">
+                    <h5 class="fw-bold mt-2">Ironclaw RGB Wireless</h5>
+                    <p>O mouse gamer CORSAIR IRONCLAW RGB WIRELESS combina sensor óptico nativo de 18.000 DPI com um
+                      formato ergonômico
+                      confortável, conectando-se ao seu PC pela TECNOLOGIA SLIPSTREAM WIRELESS CORSAIR ultrarrápida de
+                      menos de 1 ms,
+                      Bluetooth ou cabo USB.</p>
+                  </div>
+                </div>
+              </div>
+
+              <div class="tab-pane" id="headsets">
+                <div class="row">
+
+                  <div class="col-md-4">
+                    <img src="./images/headsets/blackshark-v2-hypers.png" class="d-block w-100">
+                    <h5 class="fw-bold mt-2">Razer BlackShark V2 HyperSpeed</h5>
+                    <p>Wireless Ultra-Lightweight Esports Headset</p>
+                  </div>
+
+                  <div class="col-md-4">
+                    <img src="./images/headsets/blackshark-v2-pro.png" class="d-block w-100">
+                    <h5 class="fw-bold mt-2">Razer BlackShark V2 Pro (2020) - Six Siege Special Edition</h5>
+                    <p>Wireless esports headset</p>
+                  </div>
+
+                  <div class="col-md-4">
+                    <img src="./images/headsets/a50-gallery-ps4-01-refresh.webp" class="d-block w-100">
+                    <h5 class="fw-bold mt-2">Estação Base + Sem Fio ASTRO A50</h5>
+                    <p>Headset para jogos sem fio para Xbox, PlayStation e PC/MAC*</p>
+                  </div>
+
+                  <div class="col-md-4">
+                    <img src="./images/headsets/g733-black-gallery-1.webp" class="d-block w-100">
+                    <h5 class="fw-bold mt-2">G733</h5>
+                    <p>Headset para jogos LIGHTSPEED RGB sem fio</p>
+                  </div>
+
+                  <div class="col-md-4">
+                    <img src="./images/headsets/VOID_RGB_ELITE_WIRELESS_CARBON_01.webp" class="d-block w-100">
+                    <h5 class="fw-bold mt-2">VOID RGB ELITE, Carbono</h5>
+                    <p>Mergulhe na ação com o CORSAIR VOID RGB ELITE sem fio, que apresenta drivers de áudio em neodímio
+                      de 50mm e ajuste
+                      personalizado, auriculares confortáveis de malha de microfibra e viscoelástico e uma conexão sem
+                      fio de 2,4GHz.</p>
+                  </div>
+
+                  <div class="col-md-4">
+                    <img src="./images/headsets/HS80_RGB_USB_WHITE_01.webp" class="d-block w-100">
+                    <h5 class="fw-bold mt-2">HS80 RGB USB Wired Gaming Headset — White</h5>
+                    <p>O headset gamer CORSAIR HS80 RGB USB reproduz sons incrivelmente detalhados pelos drivers de
+                      áudio em neodímio de 50mm
+                      com ajuste personalizado e som surround Dolby Audio 7.1.</p>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <section id="contact" class="pt-5 pb-5">
+      <div class="container">
+        <div class="row">
+          <h2 class="text-center fw-bold">Contact Us</h2>
+        </div>
+        <div class="row form-content justify-content-center">
+          <div class="col-md-5 mt-5 mb-5">
+            <form>
+              <div class="mb-3">
+                <input type="text" id="nome" class="form-control fw-bold" placeholder="Name" required>
+              </div>
+              <div class="mb-3">
+                <input type="email" id="email" class="form-control fw-bold" placeholder="Email" required>
+              </div>
+              <div class="mb-3">
+                <input type="tel" id="phone" class="form-control fw-bold" placeholder="Phone (optional)">
+              </div>
+              <div class="mb-3">
+                <textarea id="message" class="form-control fw-bold" placeholder="Message" required></textarea>
+              </div>
+              <button type="submit" class="btn fw-bold send-btn form-control">Send Message</button>
+            </form>
+          </div>
+          <div class="col-md-3 mt-5">
+            <div class="row">
+              <h3>
+                <i class="bi bi-hand-thumbs-up-fill"></i>
+                Social Media
+              </h3>
+              <ul class="social-links">
+                <li class="fs-5">
+                  <a href="#">
+                    <i class="bi bi-facebook"></i>
+                  </a>
+                </li>
+                <li class="fs-5 ms-1 me-1">
+                  <a href="#">
+                    <i class="bi bi-instagram"></i>
+                  </a>
+                </li>
+                <li class="fs-5">
+                  <a href="#">
+                    <i class="bi bi-whatsapp"></i>
+                  </a>
+                </li>
+                <li class="fs-5 ms-1">
+                  <a href="#">
+                    <i class="bi bi-telegram"></i>
+                  </a>
+                </li>
+              </ul>
+            </div>
+            <div class="row mt-4">
+              <h3>
+                <i class="bi bi-cursor-fill"></i>
+                Address
+              </h3>
+              <p>546 Main Street - Anytown, AW 65489</p>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+  </div>
+
+  <script src="	https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js"></script>
+
+</body>
+
+</html>

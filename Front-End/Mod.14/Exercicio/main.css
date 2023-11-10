@@ -1,0 +1,68 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  color: #9BA8AB;
+}
+
+body {
+  background-color: #06141B;
+  font-family: 'Titillium Web', sans-serif;
+}
+
+.navbar {
+  background-color: #11212D;
+}
+
+.navbar-brand,
+.navbar-brand:hover,
+.nav-link {
+  color: #9BA8AB;
+}
+
+.nav-link:hover,
+#about h2,
+#about p,
+.social-links li a i:hover {
+  color: #E9E9E9;
+}
+
+.nav-item .nav-link.active,
+.nav-item .nav-link.active+.nav-link,
+.navbar-toggler,
+.nav-store .nav-link.active {
+  background-color: #253745;
+}
+
+.navbar li {
+  letter-spacing: .05rem;
+}
+
+.form-content {
+  background: #11212D;
+  column-gap: 15%;
+}
+
+#message {
+  height: 150px;
+  resize: none;
+}
+
+.send-btn {
+  color: #9BA8AB;
+  background: #253745;
+}
+
+.send-btn:hover {
+  color: #E9E9E9;
+  background: #4A5C6A;
+}
+
+.social-links li {
+  list-style: none;
+  display: inline;
+}
+
+.social-links a {
+  text-decoration: none;
+}
