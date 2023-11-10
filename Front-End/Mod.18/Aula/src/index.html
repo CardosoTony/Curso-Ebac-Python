@@ -1,0 +1,34 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Sorteador</title>
+
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Lobster&family=Roboto:wght@400;700&display=swap"
+    rel="stylesheet">
+  <link rel="stylesheet" href="@@CSS_PATH">
+</head>
+
+<body>
+  <main>
+    <h1>Sorteador</h1>
+    <form id="random-form">
+      <div>
+        <label for="number-max">Número máximo</label>
+        <input type="number" id="number-max" required min="2" value="2" step="1">
+      </div>
+      <button type="submit">Sortear número</button>
+    </form>
+    <div class="result">O número sorteado foi
+      <span id="result-value"></span>
+    </div>
+  </main>
+
+  <script src="@@JS_PATH"></script>
+</body>
+
+</html>
